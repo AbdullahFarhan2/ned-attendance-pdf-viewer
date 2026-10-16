@@ -5,12 +5,21 @@ A Chrome extension for viewing NED University attendance PDFs directly in the br
 ## Features
 
 - View attendance PDFs in a browser tab without downloading them manually.
-- View a summary of missed classes and remaining allowable absences.
+- See a summary of missed classes and remaining allowable absences.
 - Navigate between the original PDF and the summary page.
 
 ## Installation
 
-1. Download this repository using **Code → Download ZIP**.
+### Option 1: Install from the packaged extension
+
+1. Open the repository's **Releases** section and download `ned-attendance-pdf-viewer.crx` if it is available there.
+2. Open `chrome://extensions` in Google Chrome.
+3. Enable **Developer mode**.
+4. Try dragging the downloaded `.crx` file onto the Extensions page. Chrome may block manual installation of packaged extensions, depending on its policies. If blocked, use Option 2.
+
+### Option 2: Install from source (recommended)
+
+1. Download the repository using **Code → Download ZIP**.
 2. Extract the ZIP file.
 3. Open `chrome://extensions` in Google Chrome.
 4. Enable **Developer mode**.
@@ -24,21 +33,10 @@ A Chrome extension for viewing NED University attendance PDFs directly in the br
 3. Click the extension icon.
 4. Click the button to view your attendance PDF.
 
-## Requirements
+## Privacy and Security
 
-- Google Chrome
-- Access to the NED University portal
+This extension does not ask you to enter your NED user ID or password. It uses your existing authenticated NED portal session in Chrome to access and display your attendance PDF.
 
-## Disclaimer
+Unlike third-party websites that ask you to submit your university credentials, this extension is designed to use your existing login session rather than collect your login credentials.
 
-This is an independent, student-made project and is not officially affiliated with or endorsed by NED University of Engineering and Technology.
-
-### Privacy and Security
-
-This extension does **not** ask you to enter or share your NED user ID or password. Instead, it accesses the attendance PDF through your existing, authenticated NED portal session in Chrome and displays it in the browser.
-
-Unlike third-party websites that may ask you to enter your university credentials, this extension does not require you to submit your password to a separate service to retrieve your attendance data.
-
-The extension is designed to use your existing login session rather than collect your login credentials. You should still review the source code before installing any extension, as with any software that accesses authenticated webpages.
-
-You must already be logged in to the NED University portal to use the extension.
+As with any extension, review the source code before installing it. The extension needs access to the N

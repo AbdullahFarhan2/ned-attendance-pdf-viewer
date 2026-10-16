@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NED Attendance PDF</title>
+    <link rel="stylesheet" href="pdf-viewer.css">
+</head>
+
+<body>
+
+    <div id="toolbar">
+        <button id="prev">←</button>
+        <span id="pageInfo">Loading...</span>
+        <button id="next">→</button>
+
+        <button id="zoomOut">−</button>
+        <button id="zoomIn">+</button>
+    </div>
+
+
+
+
+    <div id="viewer">
+        <canvas id="pdfCanvas"></canvas>
+
+        <div id="summaryPage" hidden>
+            <h1>Attendance Leave Summary</h1>
+            <p id="leaveStatus">Calculating leaves...</p>
+            <div id="leaveTable"></div>
+            <p class="summaryFooter">NED Attendance Assistant</p>
+        </div>
+    </div>
+
+
+    <script type="module" src="pdf-viewer.js"></script>
+
+</body>
+</html>

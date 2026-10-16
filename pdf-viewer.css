@@ -1,0 +1,176 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background: #525659;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+#toolbar {
+    height: 52px;
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+
+    background: #202124;
+    color: white;
+}
+
+#toolbar button {
+    min-width: 36px;
+    height: 32px;
+
+    border: none;
+    border-radius: 4px;
+
+    background: #3c4043;
+    color: white;
+
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#toolbar button:hover {
+    background: #5f6368;
+}
+
+#toolbar button:disabled {
+    opacity: 0.4;
+    cursor: default;
+}
+
+#pageInfo {
+    min-width: 100px;
+    text-align: center;
+    font-size: 14px;
+}
+
+#viewer {
+    flex: 1;
+    min-height: 0;
+    overflow: auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+
+    padding: 25px;
+}
+
+#pdfCanvas {
+    background: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+}
+#leaveSummary {
+    background: white;
+    color: #202124;
+    padding: 16px;
+    font-family: Arial, sans-serif;
+}
+
+#leaveSummary h2 {
+    margin: 0 0 8px;
+    font-size: 20px;
+}
+
+#leaveStatus {
+    margin: 0 0 12px;
+    color: #5f6368;
+    font-size: 13px;
+}
+
+#leaveTable {
+    overflow-x: auto;
+}
+
+#leaveTable table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+}
+
+#leaveTable th,
+#leaveTable td {
+    padding: 9px;
+    border: 1px solid #dadce0;
+    text-align: center;
+}
+
+#leaveTable th {
+    background: #f1f3f4;
+}
+
+#leaveTable td:first-child {
+    font-weight: bold;
+}
+#viewer {
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+
+#summaryPage {
+    width: 595px;
+    min-height: 842px;
+    padding: 45px;
+    background: white;
+    color: #202124;
+    font-family: Arial, sans-serif;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+    position: relative;
+}
+
+#summaryPage[hidden] {
+    display: none !important;
+}
+
+#summaryPage h1 {
+    font-size: 25px;
+    margin: 0 0 12px;
+    color: #202124;
+}
+
+#summaryPage #leaveStatus {
+    color: #5f6368;
+    font-size: 13px;
+    margin-bottom: 25px;
+}
+
+#summaryPage #leaveTable table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+}
+
+#summaryPage #leaveTable th,
+#summaryPage #leaveTable td {
+    border: 1px solid #dadce0;
+    padding: 12px 8px;
+    text-align: center;
+}
+
+#summaryPage #leaveTable th {
+    background: #f1f3f4;
+}
+
+#summaryPage .summaryFooter {
+    position: absolute;
+    bottom: 20px;
+    left: 45px;
+    color: #80868b;
+    font-size: 11px;
+}

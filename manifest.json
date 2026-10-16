@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "NED Attendance PDF Viewer",
+  "version": "1.0.0",
+  "description": "View NED attendance PDFs without downloading them.",
+  "permissions": [
+    "activeTab",
+    "scripting"
+  ],
+  "host_permissions": [
+    "https://pl.neduet.edu.pk/*"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "NED Attendance PDF Viewer"
+  }
+}
